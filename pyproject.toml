@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "arviz-plotnine"
+version = "0.1.0"
+description = "ArviZ plots using plotnine"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{name = "ArviZ team", email = "arvizdevs@gmail.com"}]
+dependencies = [
+    "arviz-base",
+    "arviz-stats[xarray]",
+    "numpy>=2",
+    "pandas",
+    "plotnine",
+]
+
+[tool.flit.module]
+name = "arviz_plotnine"
